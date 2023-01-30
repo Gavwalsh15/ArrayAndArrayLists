@@ -20,14 +20,17 @@ public class ArrayDemo {
         theArray[8] = 900;
         theArray[9] = 1000;
 
-        System.out.println("Please enter a number");
+    try {
+        System.out.println("Please enter a number:");
         Scanner input = new Scanner(System.in);
         theArray[10] = input.nextInt();
+    } catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("Out of Bounds Error\n");
+    }
 
-        for(i = 0; i<11; i++) {
+        for(i = 0; i< theArray.length; i++) {
             System.out.println("Element at index "+ i +": "+ theArray[i]);
         }
-
 
     }
 }
