@@ -28,7 +28,7 @@ public class ArrayDemo {
         System.out.println("Out of Bounds Error\n");
     }
 
-        for(i = 0; i< theArray.length; i++) {
+        for(i = 0; i<theArray.length; i++) {
             System.out.println("Element at index "+ i +": "+ theArray[i]);
         }
 
